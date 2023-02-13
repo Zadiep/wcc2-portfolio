@@ -58,7 +58,7 @@ footer{
     width: 100%;
     height: 0;
     padding: 30% 0;
-    background-image: url(../assets/images/lightgrey-line.jpeg); /*change the image to one of you choice */
+    /* background-image: url(../assets/images/lightgrey-line.jpeg);  */
     background-position: center;
     background-size: 100%;
     justify-content: center;
@@ -69,20 +69,32 @@ footer{
     transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
 
-.flex-item t1p1{
-    display: flex;
-    width: 100%;
-    height: 0;
-    padding: 30% 0;
-    background-image: url(../assets/images/term1-project1.jpg); /*change the image to one of you choice */
-    background-position: center;
-    background-size: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color:#4f4f4f;
-    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+
+
+.flex-item a#term1project1{
+    background-image: url(../assets/images/term1-project1.jpg); 
+}
+
+.flex-item a#term1project2{
+    background-image: url(../assets/images/term1-project2.jpg); 
+}
+
+.flex-item a#term1project3{
+    background-image: url(../assets/images/term1-project3.jpg); 
+}
+
+.flex-item a#term2project1{
+    background-image: url(../assets/images/term2-project1.jpg); 
+}
+
+.flex-item a#term2project2{
+    background-image: url(../assets/images/term2-project2.jpg); 
+}
+.flex-item a#term2project3{
+    background-image: url(../assets/images/term2-project3.jpg); 
+}
+.flex-item a#term2project4{
+    background-image: url(../assets/images/term2-project4.jpg); 
 }
 
 /* want a different background image for each project? */
