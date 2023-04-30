@@ -13,12 +13,12 @@ h1{
 }
 
 p{
-    font-size: 32px;
+    font-size: 25px;
     color: rgb(101, 100, 100)
 }
 
 header{
-    padding:3%;
+    padding:0 3%;
     
 }
 
@@ -38,7 +38,7 @@ footer{
 
 h3
 {
-    font-size: 50px;
+    font-size: 40px;
     background-color: #bbbbbb;
 }
 
@@ -57,16 +57,16 @@ h3
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+
     box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
-    padding: 25px;
+    padding: 2%;
 }
 
 .flex-item a{
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 0;
     padding: 30% ;
-    /* background-image: url(../assets/images/lightgrey-line.jpeg);  */
     background-position: center;
     background-size: 100%;
     justify-content: center;
@@ -131,14 +131,6 @@ h3
     background-image: url(../assets/images/term2-project10.jpg); 
 }
 
-
-
-/* want a different background image for each project? */
-/* try give each a tag a unique id in your HTML and then set different background images here*/
-/* EXAMPLE CSS: won't work if you just un-comment this:*/
-/* .flex-item a#my-special-id{
-    background-image: url(../assets/images/custom-image-name.jpeg); 
-} */
 
 
 .flex-item a:hover{
