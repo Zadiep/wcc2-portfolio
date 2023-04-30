@@ -9,8 +9,8 @@ nav{
 .responsive-video{
     padding-top: 10%;
     position: relative;
-    width: 1280px; 
-    height: 640px;
+    width: 640px; 
+    height: 320px;
 
    
 }
@@ -27,7 +27,7 @@ nav{
 /*simple way to handle responsiveness, set a max-width and width 100% so if screen is smaller than 500px, image is 100% of that size */
 #striped-image{
     width:100%;
-    max-width:1500px;
+    max-width:1000px;
     height: auto;
 }
 
@@ -39,7 +39,7 @@ article{
     align-items: center;
 }
 .title{
-    font-size: 50px;
+    font-size: 40px;
     text-align:center;
     font-weight: bolder;
     position: relative;
@@ -48,26 +48,26 @@ article{
 
 #intro{
     text-align: center;
-    font-size:30px;
-    padding-top: 20px;
+    font-size:20px;
+    padding-top: 10px;
     padding-bottom: 10%;
     position: relative;
 
 }
 
 #smallTitle{
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
     font-weight:bold;
     position: relative;
 }
 
 .word{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-size:30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size:20px;
     text-align: left;
     position: relative;
     max-width:1500px;
