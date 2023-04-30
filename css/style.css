@@ -4,6 +4,7 @@
 body{
     font-family: Verdana, sans-serif;
     margin: 0;
+    background-color: rgb(190, 172, 252);
 }
 
 h1{
@@ -156,48 +157,3 @@ h3
    font-size:34px;
 }
 
-
-/* Media Queries for responsive design */
-
-/* Un-comment the body background-colors to see bold debug color change between screen sizes */
-
-/* Extra large */
-@media screen and (max-width: 1200px) {
-    body {
-      background-color: rgb(81, 0, 255);
-    }
-
-    .flex-item{
-        flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
-    }
-}
-
-/* Large */
-@media screen and (max-width: 992px) {
-    body {
-      background-color: #8252fd;
-    }
-
-}
-
-/* Medium */
-@media screen and (max-width: 768px) {
-    body {
-      background-color: rgb(190, 172, 252);
-    }
-
-    .flex-item{
-        flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
-    }
-}
-
-/* Small */
-@media screen and (max-width: 576px) {
-    body {
-      background-color: rgb(216, 216, 255);
-    }
-
-    .flex-item{
-        flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
-    }
-}
