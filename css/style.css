@@ -132,10 +132,6 @@ h3
 }
 
 
-.flex-item a#term2project11{
-    background-image: url(../assets/images/term2-project11.jpg); 
-}
-
 
 /* want a different background image for each project? */
 /* try give each a tag a unique id in your HTML and then set different background images here*/
