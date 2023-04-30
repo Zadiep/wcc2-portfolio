@@ -7,11 +7,12 @@ nav{
 
 /* original aspect ratio width="640" height="360" */
 .responsive-video{
+    padding-top: 10%;
     position: relative;
-    width: 79%; /* adjust this and the padding-top to change how big it is*/
-    height: 0;
-    padding-top: 45%; /* padding top is in reltation to the width of parent, it preserves aspect ratio*/
-    /* margin: 0 auto; */ /*this would center your video in the section container*/
+    width: 1280px; 
+    height: 640px;
+
+   
 }
 .responsive-video iframe{
     position: absolute;
@@ -19,14 +20,58 @@ nav{
     left:0;
     height: 100%;
     width: 100%;
+    align-items: center;
+    
 }
 
 /*simple way to handle responsiveness, set a max-width and width 100% so if screen is smaller than 500px, image is 100% of that size */
 #striped-image{
     width:100%;
-    max-width:500px;
+    max-width:1500px;
     height: auto;
 }
 
+article{
+    padding-left: 15%;
+    padding-right: 5%;
+    position: relative;
+    max-width: 60%;
+    align-items: center;
+}
+.title{15%;
+    font-size: 50px;
+    text-align:center;
+    font-weight: bolder;
+    position: relative;
+    padding-bottom: 10%;
+}
+
+#intro{
+    text-align: center;
+    font-size:30px;
+    padding-top: 20px;
+    padding-bottom: 10%;
+    position: relative;
+
+}
+
+#smallTitle{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 40px;
+    font-weight:bold;
+    position: relative;
+}
+
+.word{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size:30px;
+    text-align: left;
+    position: relative;
+    max-width:1500px;
+    
+}
 
 /* you could add some media queries to make the video size look good on all screen sizes*/

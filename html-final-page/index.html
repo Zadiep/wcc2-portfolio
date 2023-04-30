@@ -6,46 +6,126 @@
         <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>WCC Portfolio - Demo Page</title>
-
         <!-- including for some global styling -->
         <link rel="stylesheet" href="../css/style.css">
         <!-- if I had some styling I wanted to include on one special page -->
-        <link rel="stylesheet" href="css/final.css">
+        <link rel="stylesheet" href="css/final-style.css">
 
     </head>
     <body>
         <!-- if you have sub-pages think about adding a simple back button -->
         <nav>
-            <a href="../">HomePage</a>
+            <a class="word" href="../">HomePage</a>
         </nav>
-        <header>
-            <h1>Zidian Pan</h1>
-            <p></p> 
-            <p></p>
-        </header>
 
         <main>
-            <section>
-                <h3>Meeting Me (Final Project of Wcc1)</h3>
-                <div class="responsive-video">
-                    <iframe src="https://player.vimeo.com/video/789522881?h=1a8b529eb9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Meeting Me - Zidian Pan"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                </div>
-               
+            <article>
 
-            </section>
-            <section>
-                <h3>Add an image</h3>
-                <img id="striped-image" src="../assets/images/repeating-diagonal-lines.jpeg"/>
-                <p>You can add images into your HTML document (see above), or add them as background images in CSS styling (like on the main page).</p>
-            </section>
+            <div class="title">Inversion and Absence</div>
+                <br>
+            <div id="intro">
+                An interactive installation that can capture the body contour and create random sound.<br>
+               <br>
+               Produced by Zidian Pan
+            </div>
+            
 
+            <div class="responsive-video">
+                <iframe src="https://player.vimeo.com/video/822488302?h=f3657f6732" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            
+    
+            <div class="word">
+                It is an interactive installation or experiment. By using Kinect Camera, it can capture the body contour of the audience then visualize the outlines. The contour data will be converted into random sound which is processed by Max. Other visual effects are used also to convey the concept about absence in time. The participants could interact with others or move alone and result in negative or inversion visual effect.
+            </div>
+
+
+            <div id="smallTitle">Introduction</div>
+            <div class="word">
+                It is an interactive installation or experiment. By using Kinect Camera, it can capture the body contour of the audience then visualize the outlines. The contour data will be converted into random sound which is processed by Max. Other visual effects are used also to convey the concept about absence in time. The participants could interact with others or move alone and result in negative or inversion visual effect.   
+            
+            </div>
+
+
+            <div id="smallTitle">Concept and Background Research</div>
+            <div class="word">
+                Nowadays, meeting with web 3.0, with its easy, direct and massive access to people and their ideas, ‘presence’ can easily become a morbid but unnoticeable desire at the moment. I want to move away from it and embrace the absence of the individual and the gaps in the traces by focusing on them. ‘Our understanding of perception needs to be expanded beyond just seeing present objects and scenes, and that absence perception is an important aspect of how we perceive the world around us.’  
+
+In this piece of work, the Kinect camera is used to recognize the contours of the participant’s body in a real-time. As the audience moves, the contour lines become a trace that is left behind, outlining shapes that emphasize parts of him that were not there. This movement also causes a random change in electronic sound that becomes a harsh sound upon leaving, suggesting that a part of the potential is absent.
+  
+            </div>
+
+            <div id="smallTitle">Technical Implementation</div>
+            <img id="striped-image" src="images/001.png"/></img>
+
+            <div class="word">
+                The input should be the outlines of human’s body or body parts like hands, faces or feet, which will be capture by camera. In this case, it is Kinect Camera.  I used ofxKinect addon in OpenFrameworks to get the contour data successfully.
+            </div>
+            <img id="striped-image" src="images/002.png"/></img>
+
+            <div class="word">
+                For connection part, the ofxOSC addon is applied to send centroid position of the maximum contour and the distance between the centroid and person in real-time get by Kinect. And the data are received by OSC plug-in in Max which is visual programming software.
+            
+            </div>
+            <img id="striped-image" src="images/003.jpg"/></img>
+
+            <div class="word">
+                In the beginning design, the output should be the dynamic, squeezed, transformable bubble or bubbles with clear outline presented on screen. The more important is that it was reshaped using the data got in input. Specifically, the shape of bubble should be the negative of human body’s structure. For output, there are some software or libraries could afford wonderful scenes. Unity is excellent in building similar models and it has Rich, open-source model library. Another choice is the whole project could be proceeded in VR or AR. Also, Three.js could be used to build AR work to make work more interactive maybe. However, during the creation, I realized that it is too hard to learn new techniques in short time no need to say applying the 3d related technique. I decided to realize the visual effect by combining OpenCV.
+                <br>
+                <br>
+                In the final output part, the contour of body shape will be drawn in real-time and the track of it will also be left. Thus, the empty part could represent the absence of human, which emphasizes the theme of this project. The whole page is divided by grids to show time-lapse video of different moments. This can also represent the absence of time produced by the moving trajectory. And the real-time image got by Kinect in form of ‘point cloud’ provides another visual effect.
+
+            </div>
+
+            <img id="striped-image" src="images/004.jpg"/></img>
+            <br><br>
+            <img id="striped-image" src="images/005.png"/></img>
+
+            <div class="word">
+                Since changing the 3D shape according to real-time data cannot be realized, sound effects can be used as variables to prove the expression. After received the OSC values, the data could be processed to generate electronic sounds creating depressive atmosphere.
+
+
+            </div>
+            <img id="striped-image" src="images/006.jpg"/></img>
+            <br><br>
+            <div id="smallTitle">Reflection and Future Development</div>
+
+            <div class="word">
+                I successfully used the Kinect and processed the acquired data using both visual and acoustic programming. Unfortunately, the result was not accurate enough. Hopefully, the data should be acquired by Max can cause more significant changes in the sound, and it is one of the goals of future iterations to make the sound effects produced in the software more appropriate to the subject matter through sound design.
+
+                <br>
+                Also, the initial desire to have a real-time output method for 3D Mesh in Unity is still what I want most. If this were possible, the audience would have a better interactive experience and they would have a clearer understanding of the core ideas of the project.
+
+            </div>
+            <br><br>
+            <div id="smallTitle">References </div>
+
+            <div class="word">
+                <br>[1] Hommen, David. “Absences as Latent Potentialities.” Philosophical Papers 45, no. 3 (2016): 401–35. https://doi.org/10.1080/05568641.2016.1245829.
+                <br>[2] Farennikova, Anna. “Seeing Absence.” Philosophical Studies 166, no. 3 (2012): 429–54. https://doi.org/10.1007/s11098-012-0045-y.
+                <br>[3] Walton, Saige, and Lucio Crispino. “Screening the Artist: Between Presence/Absence, Immediacy/Mediation.” Alphaville. Film and Screen Media, University College Cork, July 15, 2022. https://www.alphavillejournal.com/Issue23/HTML/Editorial.html.
+                <br>[4] Roberts, Tom, and Joel Krueger. “Loneliness and the Emotional Experience of Absence.” The Southern Journal of Philosophy 59, no. 2 (2020): 185–204. https://doi.org/10.1111/sjp.12387.
+                <br>[5] Fracture.io – openFrameworks and Unity for realtime body sculptures, Aaron Meyers, Jeff Crouse, MPC Digital, The One Club, Will Adams, https://www.creativeapplications.net/environment/fracture-io-openframeworks-and-unity-for-realtime-body-sculptures/
+
+            </div>
+
+            <div id="smallTitle">Code Resources  </div>
+
+            <div class="word">
+                <br>[1] ofxOsx Documentation by openFramworks, https://openframeworks.cc/documentation/ofxOsc/
+                <br>[2] ofxKinect Documentation by openFramworks, https://openframeworks.cc/documentation/ofxKinect/ofxKinect/
+                <br>[3] ofxOpenCv Documentation by openFramworks, https://openframeworks.cc/documentation/ofxOpenCv/
+                <br>[4] ‘Working with video: frame buffer grid’, Rebecca Aston, Programming for Artists and Designers, https://learn.gold.ac.uk/mod/page/view.php?id=1169708
+                <br>[5] ‘OFx: Kinect fiery coment’, Rebecca Aston, Workshops for Creative Coding 2, https://learn.gold.ac.uk/mod/page/view.php?id=1241939
+                
+            </div>
+
+        </article>
         </main>
 
-        <footer>
-            <!-- normally information like contact details etc  -->
-            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
-            
-         </footer>
     </body>
 </html>
