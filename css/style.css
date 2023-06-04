@@ -8,13 +8,24 @@ body{
 }
 
 h1{
-    font-size: 80px;
+    font-size: 50px;
     
 }
 
 p{
-    font-size: 25px;
-    color: rgb(101, 100, 100)
+    width: 70%
+    font-size: 20px;
+    color: rgb(93, 91, 91)
+}
+
+pbold
+{
+    font-weight: bold;
+    width: 70%
+    font-size: 20px;
+    color: rgb(93, 91, 91)
+
+
 }
 
 header{
@@ -38,8 +49,10 @@ footer{
 
 h3
 {
-    font-size: 40px;
-    background-color: #bbbbbb;
+    font-size: 30px;
+    width: 100%
+    background-color: gray;
+
 }
 
 /* Flex layouts are one of the easier ways to style responsive layouts that work on all devices */
@@ -63,9 +76,9 @@ h3
 }
 
 .flex-item a{
-    display: flex;
-    width: 80%;
-    height: 0;
+    display:flex;
+    width: 150px;
+    height: 100px;
     padding: 30% ;
     background-position: center;
     background-size: 100%;
